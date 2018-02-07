@@ -19,9 +19,9 @@ public class Address {
     public final int POSTAL_CODE_INDEX = 3;
 
     public final String value;
-    public final BLOCK block;
-    public final STREET street;
-    public final UNIT unit;
+    public final Block block;
+    public final Street street;
+    public final Unit unit;
     public final PostalCode postalCode;
 
     private boolean isPrivate;
@@ -80,101 +80,101 @@ public class Address {
     }
 }
 
-public class Block {
+class Block {
     private final String block;
 
-    public block(String block) {
+    public Block(String block) {
         this.block = block;
     }
 
-    @override
+    @Override
     public String toString() {
         return block;
     }
 
-    @override
+    @Override
     public boolean equals(Object other) {
         return other == this
                 || (other instanceof Block
                 && this.block.equals(((Block) other).block));
     }
 
-    @override
+    @Override
     public int hashCode() {
         return block.hashCode();
     }
 }
 
-public class Street {
+class Street {
     private final String value;
 
-    public street(String street) {
+    public Street(String street) {
         this.value = street;
     }
 
-    @override
+    @Override
     public String toString() {
         return value;
     }
 
-    @override
+    @Override
     public boolean equals(Object other) {
         return other == this
                 || (other instanceof Block
                 && this.value.equals(((Street) other).value));
     }
 
-    @override
+    @Override
     public int hashCode() {
         return value.hashCode();
     }
 }
 
-public class Unit {
+class Unit {
     private final String value;
 
-    public street(String unit) {
+    public Unit(String unit) {
         this.value = unit;
     }
 
-    @override
+    @Override
     public String toString() {
         return value;
     }
 
-    @override
+    @Override
     public boolean equals(Object other) {
         return other == this
                 || (other instanceof Block
                 && this.value.equals(((Unit) other).value));
     }
 
-    @override
+    @Override
     public int hashCode() {
         return value.hashCode();
     }
 }
 
-public class PostalCode {
+class PostalCode {
     private final String value;
 
-    public street(String postalCode) {
+    public PostalCode(String postalCode) {
         this.value = postalCode;
     }
 
-    @override
+    @Override
     public String toString() {
         return value;
     }
 
-    @override
+    @Override
     public boolean equals(Object other) {
         return other == this
                 || (other instanceof Block
                 && this.value.equals(((PostalCode) other).value));
     }
 
-    @override
+    @Override
     public int hashCode() {
         return value.hashCode();
     }
