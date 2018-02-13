@@ -50,7 +50,8 @@
   list
   add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy
   list
-  add Crystal pp/666666 e/clc@gmail.com pa/666, shiny street t/school t/friends]
+  add Crystal pp/666666 e/clc@gmail.com pa/666, shiny street t/school t/friends
+  list
 
   # should not allow adding duplicate persons
   add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy

@@ -25,7 +25,7 @@
 || viewall: Views the non-private details of the person identified by the index number in the last shown person listing.
 || Parameters: INDEX
 || Example: viewall 1
-|| sort: Sort all persons in the address book by name in alphabetical order.
+|| sort: Sort and list all persons in the address book by name in alphabetical order.
 || Example: sort
 || help: Shows program usage instructions.
 || Example: help
@@ -138,29 +138,29 @@
 || 5 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  add Crystal pp/666666 e/clc@gmail.com pa/666, shiny street t/school t/friends]
-|| New person added: Crystal Phone: (private) 666666 Email: clc@gmail.com Address: 555, shiny street Tags: [school][friends]
+|| New person added: Crystal Phone: (private) 666666 Email: clc@gmail.com Address: (private) 666, shiny street Tags: [school][friends]
 || ===================================================
 || Enter command: || [Command entered:  list]
-|| 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags:
+|| 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags: 
 || 	2. Betsy Choo Tags: [secretive]
 || 	3. Charlie Dickson Email: charlie.d@nus.edu.sg Address: 333, gamma street Tags: [school][friends]
 || 	4. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
 || 	5. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
-||  6. Crystal Email: clc@gmail.com Address: 555, shiny street Tags: [school][friends]
-||
+|| 	6. Crystal Email: clc@gmail.com Tags: [school][friends]
+|| 
 || 6 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy]
 || This person already exists in the address book
 || ===================================================
-|| Enter command: || [Command entered:  sort]
-|| 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags:
-||  2. Betsy Choo Tags: [secretive]
+|| Enter command: || [Command entered:sort]
+|| 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags: 
+|| 	2. Betsy Choo Tags: [secretive]
 || 	3. Charlie Dickson Email: charlie.d@nus.edu.sg Address: 333, gamma street Tags: [school][friends]
-|| 	4. Crystal Email: clc@gmail.com Address: 555, shiny street Tags: [school][friends]
+|| 	4. Crystal Email: clc@gmail.com Tags: [school][friends]
 || 	5. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
 || 	6. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
-||
+|| 
 || 6 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  view]
@@ -209,7 +209,7 @@
 || Viewing person: Charlie Dickson Email: charlie.d@nus.edu.sg Address: 333, gamma street Tags: [school][friends]
 || ===================================================
 || Enter command: || [Command entered:  view 4]
-|| Viewing person: Crystal Email: clc@gmail.com Address: 555, shiny street Tags: [school][friends]
+|| Viewing person: Crystal Email: clc@gmail.com Tags: [school][friends]
 || ===================================================
 || Enter command: || [Command entered:  view 5]
 || Viewing person: Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
@@ -218,7 +218,7 @@
 || Viewing person: Charlie Dickson Phone: (private) 333333 Email: charlie.d@nus.edu.sg Address: 333, gamma street Tags: [school][friends]
 || ===================================================
 || Enter command: || [Command entered:  viewall 4]
-|| Viewing person: Crystal Phone: (private) 666666 Email: clc@gmail.com Address: 555, shiny street Tags: [school][friends]
+|| Viewing person: Crystal Phone: (private) 666666 Email: clc@gmail.com Address: (private) 666, shiny street Tags: [school][friends]
 || ===================================================
 || Enter command: || [Command entered:  viewall 5]
 || Viewing person: Dickson Ee Phone: 444444 Email: (private) dickson@nus.edu.sg Address: 444, delta street Tags: [friends]
@@ -291,7 +291,7 @@
 || Enter command: || [Command entered:  list]
 || 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags: 
 || 	2. Betsy Choo Tags: [secretive]
-||  3. Crystal Email: clc@gmail.com Address: 555, shiny street Tags: [school][friends]
+|| 	3. Crystal Email: clc@gmail.com Tags: [school][friends]
 || 	4. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
 || 	5. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
 || 
@@ -303,7 +303,7 @@
 || Enter command: || [Command entered:  list]
 || 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags: 
 || 	2. Betsy Choo Tags: [secretive]
-|| 	3. Crystal Email: clc@gmail.com Address: 555, shiny street Tags: [school][friends]
+|| 	3. Crystal Email: clc@gmail.com Tags: [school][friends]
 || 	4. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
 || 
 || 4 persons listed!
@@ -313,7 +313,7 @@
 || ===================================================
 || Enter command: || [Command entered:  list]
 || 	1. Betsy Choo Tags: [secretive]
-|| 	2. Crystal Email: clc@gmail.com Address: 555, shiny street Tags: [school][friends]
+|| 	2. Crystal Email: clc@gmail.com Tags: [school][friends]
 || 	3. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
 || 
 || 3 persons listed!
